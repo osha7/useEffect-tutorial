@@ -1,16 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-import App2 from './App2'
-import BenAwadExample1 from './benAwadExample1'
+// import App from './App';
+// import App2 from './App2'
+// import BenAwadExample1 from './benAwadExample1'
+import BenAwadExample2 from './benAwadExample2'
 
 ReactDOM.render(
   <React.StrictMode>
     {/* <App /> */}
     {/* <App2 />  */}
-    <BenAwadExample1 />
+    {/* <BenAwadExample1 /> */}
+    <BenAwadExample2 />
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useForm } from './useForm';
 import { Hello } from "./hello"
 
-const BAExample1 = () => {
+const BAExample2 = () => {
 
     const [values, handleChange] = useForm({ 
         email: "",
@@ -11,36 +11,29 @@ const BAExample1 = () => {
         firstName:""
     })
 
-    // const [showHello, setShowHello] = useState(true)
-
-    // // below is for changing values in form:
     // useEffect(() => {
-    //     console.log("render")
-    // }, [values.email, values.password]) //dependency array
-
-    // to replace componentDidMount and componentWillUnmount:
-    // useEffect(() => {
-    //     console.log('render')
-    //     // cleanup function:
-    //     return () => {
-    //         console.log("unmount")
+    //     const onMouseMove = e => {
+    //         console.log(e)
     //     }
-    // }, []) //empty dependency array
+    //     window.addEventListener('mousemove', onMouseMove)
+    //     return () => {
+    //         window.removeEventListener('mousemove', onMouseMove)
+    //     }
+    // }, [])
+// ---------------------------------
+// below shows how you can have more than one useEffect and they fire off in order
+    useEffect(() => {
+        console.log('mount1')
+    }, [])
 
     useEffect(() => {
-        console.log('render')
-        return () => {
-            console.log("unmount")
-        }
-    }, [values.email])
+        console.log('mount2')
+    }, [])
 
 
       return (
         <div>
-            <>
-                {/* { showHello && <Hello /> } <br /> */}
-                {/* <button onClick={() => setShowHello(!showHello)} >toggle</button> <br /><br /> */}
-                
+            <>                
                 <input name="firstName" value={values.firstName} onChange={handleChange} placeholder="first name" /><br />
                 <input name="email" value={values.email} onChange={handleChange} placeholder="email" /><br />
                 <input
@@ -57,5 +50,5 @@ const BAExample1 = () => {
       
     }
     
-    export default BAExample1;
+    export default BAExample2;
     
