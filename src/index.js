@@ -4,13 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import App2 from './App2'
-import benAwadExample1 from './benAwadExample1'
+import BenAwadExample1 from './benAwadExample1'
 
 ReactDOM.render(
   <React.StrictMode>
     {/* <App /> */}
     {/* <App2 />  */}
-    <benAwadExample1 />
+    <BenAwadExample1 />
   </React.StrictMode>,
   document.getElementById('root')
 );
