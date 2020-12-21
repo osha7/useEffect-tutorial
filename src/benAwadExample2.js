@@ -1,7 +1,6 @@
 import './App.css';
 import React, { useEffect, useState } from 'react';
 import { useForm } from './useForm';
-import { Hello } from "./hello"
 
 const BAExample2 = () => {
 

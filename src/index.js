@@ -5,14 +5,18 @@ import reportWebVitals from './reportWebVitals';
 // import App from './App';
 // import App2 from './App2'
 // import BenAwadExample1 from './benAwadExample1'
-import BenAwadExample2 from './benAwadExample2'
+// import BenAwadExample2 from './benAwadExample2'
+// import BenAwadNumbersAPI from './benAwadNumbersAPI'
+import Counter from './counter'
 
 ReactDOM.render(
   <React.StrictMode>
     {/* <App /> */}
     {/* <App2 />  */}
     {/* <BenAwadExample1 /> */}
-    <BenAwadExample2 />
+    {/* <BenAwadExample2 /> */}
+    {/* < BenAwadNumbersAPI /> */}
+    < Counter />
   </React.StrictMode>,
   document.getElementById('root')
 );

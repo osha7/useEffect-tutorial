@@ -2,3 +2,13 @@ div {
   text-align: center;
   margin-top: 5rem;
 }
+
+#blue {
+  background-color: rgba(0, 255, 255, 0.513);
+  padding: 5em;
+}
+
+#blue button {
+  width: 7em;
+  height: 5em;
+}
